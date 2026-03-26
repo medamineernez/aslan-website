@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Aslan Organisation - simple modern one-page website" />
-    <title>Aslan Organisation</title>
+    <meta name="description" content="ARSSELENE ROUATBI - Organisation - simple modern one-page website" />
+    <title>ARSSELENE ROUATBI - Organisation</title>
 
     <!-- Bootstrap (layout + responsiveness) -->
     <link
@@ -151,6 +151,21 @@
         border: 1px solid rgba(17, 26, 46, 0.06);
       }
 
+      .packs-block {
+        background: var(--brand-900);
+        border: 1px solid rgba(232, 240, 255, 0.18);
+        color: #e8f0ff;
+      }
+
+      .packs-block .small {
+        color: rgba(232, 240, 255, 0.85);
+      }
+
+      .packs-block a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
       .coming-soon {
         border-radius: 18px;
         border: 1px solid rgba(43, 92, 255, 0.22);
@@ -225,31 +240,24 @@
               </div>
             </div>
             <div class="hero-top-inner text-center">
-              <div class="badge badge-soft rounded-pill px-3 py-2 d-inline-block" data-i18n="badge">Aslan Organisation Website</div>
+              <div class="badge badge-soft rounded-pill px-3 py-2 d-inline-block" data-i18n="badge">ARSSELENE ROUATBI - Organisation Website</div>
             </div>
           </div>
         </div>
 
         <div class="container hero-inner">
-          <h1 class="hero-title">Aslan Organisation</h1>
+          <h1 class="hero-title">ARSSELENE ROUATBI - Organisation</h1>
           <p class="hero-subtitle mb-0" data-i18n="heroSubtitle">
             Welcome. This page lists the payment methods we accept and our terms of use. New sections and features will
             appear here over time.
           </p>
 
-          <div class="logo-row" data-i18n-aria="logoRowAria" aria-label="Aslan Organisation logos">
-            <div class="logo-pill" role="img" data-i18n-aria="logo1Aria" aria-label="Aslan Organisation emblem">
-              <img
-                data-i18n-alt="logo1Alt"
-                src="assets/image.png"
-                alt="Aslan Organisation — book and crescent emblem"
-              />
-            </div>
-            <div class="logo-pill" role="img" data-i18n-aria="logo2Aria" aria-label="Aslan Organisation icon">
+          <div class="logo-row" data-i18n-aria="logoRowAria" aria-label="ARSSELENE ROUATBI - Organisation logos">
+            <div class="logo-pill" role="img" data-i18n-aria="logo2Aria" aria-label="ARSSELENE ROUATBI - Organisation icon">
               <img
                 data-i18n-alt="logo2Alt"
                 src="assets/logo.png"
-                alt="Aslan Organisation — crescent moon logo"
+                alt="ARSSELENE ROUATBI - Organisation — crescent moon logo"
               />
             </div>
           </div>
@@ -280,6 +288,27 @@
           </div>
         </section>
 
+        <!-- Packs -->
+        <section class="section" aria-labelledby="packs-title">
+          <div class="section-head">
+            <h2 id="packs-title" class="section-title h3 mb-1" data-i18n="packsTitle">Packs</h2>
+            <p class="section-lead mb-0" data-i18n="packsLead">One pack available for now.</p>
+          </div>
+
+          <div class="terms packs-block">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <div class="small text-uppercase" data-i18n="packNameLabel">Pack</div>
+                <div class="h4 fw-bold mb-0" data-i18n="packNameValue">Aslan calendar</div>
+              </div>
+              <div class="col-12 col-md-6 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                <div class="small text-uppercase" data-i18n="packPriceLabel">Price</div>
+                <div class="display-6 fw-bold" data-i18n="packPriceValue">42 TND</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Terms of Use -->
         <section class="section" aria-labelledby="terms-title">
           <div class="section-head">
@@ -293,10 +322,10 @@
                 <h3 class="h5 mb-3" style="font-weight: 800;" data-i18n="termsHeading">Usage guidelines</h3>
                 <div class="terms-body text-start" data-i18n-html="termsHtml">
                   <p class="mb-3">
-                    By using the Aslan Organisation website, you agree to comply with the following terms and conditions.
+                    By using the ARSSELENE ROUATBI - Organisation website, you agree to comply with the following terms and conditions.
                   </p>
                   <p class="mb-3">
-                    Aslan Organisation provides this platform for informational purposes and to support academic projects
+                    ARSSELENE ROUATBI - Organisation provides this platform for informational purposes and to support academic projects
                     and research initiatives.
                   </p>
                   <p class="mb-3">
@@ -309,10 +338,47 @@
                     or its content is strictly prohibited.
                   </p>
                   <p class="mb-3">
-                    Aslan Organisation reserves the right to update or modify these terms at any time without prior
+                    ARSSELENE ROUATBI - Organisation reserves the right to update or modify these terms at any time without prior
                     notice. Continued use of the website implies acceptance of any changes.
                   </p>
                   <p class="mb-0">If you do not agree with these terms, please refrain from using this website.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact / Activities -->
+        <section class="section" aria-labelledby="contact-title">
+          <div class="section-head">
+            <h2 id="contact-title" class="section-title h3 mb-1" data-i18n="contactTitle">Contact & activities</h2>
+            <p class="section-lead mb-0" data-i18n="contactLead">Address, name, activities, and phone number.</p>
+          </div>
+
+          <div class="terms">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <div class="small text-uppercase" data-i18n="contactAddressLabel">Address</div>
+                <div class="fw-semibold" data-i18n="contactAddressValue">ROUTE DE SOUSSE Kalaa Essghira Sousse 4021</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="small text-uppercase" data-i18n="contactNameLabel">Name</div>
+                <div class="fw-semibold" data-i18n="contactNameValue">ARSSELENE ROUATBI</div>
+              </div>
+
+              <div class="col-12">
+                <div class="small text-uppercase" data-i18n="contactActivitiesLabel">Activities</div>
+                <div class="fw-semibold" data-i18n-html="contactActivitiesValue">
+                  ACTIVITES INFORMATIQUES<br />
+                  PORTAIL INTERNET
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="small text-uppercase" data-i18n="contactPhoneLabel">Phone number</div>
+                <div class="fw-semibold">
+                  <a href="tel:+21624301604" data-i18n="contactPhoneValue">+216 24301604</a>
                 </div>
               </div>
             </div>
@@ -326,7 +392,7 @@
               More features coming soon…
             </h2>
             <p class="section-lead mb-0" style="max-width: 70ch;" data-i18n="comingBody">
-              We are preparing additional tools and improvements for Aslan Organisation. Check back soon for new updates,
+              We are preparing additional tools and improvements for ARSSELENE ROUATBI - Organisation. Check back soon for new updates,
               enhanced payment options, and expanded information.
             </p>
           </div>
@@ -337,7 +403,7 @@
             <hr class="opacity-10" />
             <div class="small">
               &copy; <span id="year">2026</span>
-              <span data-i18n="footerLine"> Aslan Organisation. All rights reserved.</span>
+              <span data-i18n="footerLine"> ARSSELENE ROUATBI - Organisation. All rights reserved.</span>
             </div>
           </div>
         </footer>
@@ -349,15 +415,15 @@
         var T = {
           en: {
             metaDescription:
-              "Aslan Organisation — payment methods, terms of use, and updates. Official website information.",
-            badge: "Aslan Organisation Website",
+              "ARSSELENE ROUATBI - Organisation — payment methods, terms of use, and updates. Official website information.",
+            badge: "ARSSELENE ROUATBI - Organisation Website",
             heroSubtitle:
               "Welcome. This page lists the payment methods we accept and our terms of use. New sections and features will appear here over time.",
-            logoRowAria: "Aslan Organisation logos",
-            logo1Aria: "Aslan Organisation emblem",
-            logo1Alt: "Aslan Organisation — book and crescent emblem",
-            logo2Aria: "Aslan Organisation icon",
-            logo2Alt: "Aslan Organisation — crescent moon logo",
+            logoRowAria: "ARSSELENE ROUATBI - Organisation logos",
+            logo1Aria: "ARSSELENE ROUATBI - Organisation emblem",
+            logo1Alt: "ARSSELENE ROUATBI - Organisation — book and crescent emblem",
+            logo2Aria: "ARSSELENE ROUATBI - Organisation icon",
+            logo2Alt: "ARSSELENE ROUATBI - Organisation — crescent moon logo",
             paymentTitle: "Payment methods",
             paymentLead: "Supported payment options for a smooth checkout experience.",
             paymentImgAlt: "Supported payment methods",
@@ -365,29 +431,45 @@
             termsLead: "Please read before using our services.",
             termsHeading: "Usage guidelines",
             termsHtml:
-              '<p class="mb-3">By using the Aslan Organisation website, you agree to comply with the following terms and conditions.</p>' +
-              '<p class="mb-3">Aslan Organisation provides this platform for informational purposes and to support academic projects and research initiatives.</p>' +
+              '<p class="mb-3">By using the ARSSELENE ROUATBI - Organisation website, you agree to comply with the following terms and conditions.</p>' +
+              '<p class="mb-3">ARSSELENE ROUATBI - Organisation provides this platform for informational purposes and to support academic projects and research initiatives.</p>' +
               '<p class="mb-3">We are committed to protecting user privacy. We do not collect, store, or process any personal data from users, and we do not use cookies or any tracking technologies. Your interaction with this website remains completely anonymous.</p>' +
               '<p class="mb-3">Users agree to use this website responsibly and only for lawful purposes. Any misuse of the platform or its content is strictly prohibited.</p>' +
-              '<p class="mb-3">Aslan Organisation reserves the right to update or modify these terms at any time without prior notice. Continued use of the website implies acceptance of any changes.</p>' +
+              '<p class="mb-3">ARSSELENE ROUATBI - Organisation reserves the right to update or modify these terms at any time without prior notice. Continued use of the website implies acceptance of any changes.</p>' +
               '<p class="mb-0">If you do not agree with these terms, please refrain from using this website.</p>',
+            contactTitle: "Contact & activities",
+            contactLead: "Address, name, activities, and phone number.",
+            contactAddressLabel: "Address",
+            contactAddressValue: "ROUTE DE SOUSSE Kalaa Essghira Sousse 4021",
+            contactNameLabel: "Name",
+            contactNameValue: "ARSSELENE ROUATBI",
+            contactActivitiesLabel: "Activities",
+            contactActivitiesValue: "ACTIVITES INFORMATIQUES<br />PORTAIL INTERNET",
+            contactPhoneLabel: "Phone number",
+            contactPhoneValue: "+216 24301604",
+            packsTitle: "Packs",
+            packsLead: "One pack available for now.",
+            packNameLabel: "Pack",
+            packNameValue: "Pack 1",
+            packPriceLabel: "Price",
+            packPriceValue: "42 TND",
             comingTitle: "More features coming soon…",
             comingBody:
-              "We are preparing additional tools and improvements for Aslan Organisation. Check back soon for new updates, enhanced payment options, and expanded information.",
-            footerLine: " Aslan Organisation. All rights reserved.",
+              "We are preparing additional tools and improvements for ARSSELENE ROUATBI - Organisation. Check back soon for new updates, enhanced payment options, and expanded information.",
+            footerLine: " ARSSELENE ROUATBI - Organisation. All rights reserved.",
             langGroupAria: "Language",
           },
           fr: {
             metaDescription:
-              "Aslan Organisation — modes de paiement, conditions d'utilisation et actualités. Informations du site officiel.",
-            badge: "Site web — Aslan Organisation",
+              "ARSSELENE ROUATBI - Organisation — modes de paiement, conditions d'utilisation et actualités. Informations du site officiel.",
+            badge: "Site web — ARSSELENE ROUATBI - Organisation",
             heroSubtitle:
               "Bienvenue. Cette page présente les modes de paiement acceptés et nos conditions d'utilisation. D'autres rubriques et fonctionnalités y seront ajoutées progressivement.",
-            logoRowAria: "Logos Aslan Organisation",
-            logo1Aria: "Emblème Aslan Organisation",
-            logo1Alt: "Aslan Organisation — emblème livre et croissant",
-            logo2Aria: "Icône Aslan Organisation",
-            logo2Alt: "Aslan Organisation — logo croissant de lune",
+            logoRowAria: "Logos ARSSELENE ROUATBI - Organisation",
+            logo1Aria: "Emblème ARSSELENE ROUATBI - Organisation",
+            logo1Alt: "ARSSELENE ROUATBI - Organisation — emblème livre et croissant",
+            logo2Aria: "Icône ARSSELENE ROUATBI - Organisation",
+            logo2Alt: "ARSSELENE ROUATBI - Organisation — logo croissant de lune",
             paymentTitle: "Modes de paiement",
             paymentLead: "Options de paiement prises en charge pour un paiement simple et fluide.",
             paymentImgAlt: "Moyens de paiement acceptés",
@@ -395,16 +477,32 @@
             termsLead: "Veuillez les lire avant d'utiliser nos services.",
             termsHeading: "Modalités d'utilisation",
             termsHtml:
-              "<p class=\"mb-3\">En utilisant le site de l'Aslan Organisation, vous acceptez de respecter les présentes conditions générales.</p>" +
-              "<p class=\"mb-3\">L'Aslan Organisation met cette plateforme à disposition à titre informatif et pour soutenir des projets académiques et des initiatives de recherche.</p>" +
+              "<p class=\"mb-3\">En utilisant le site de l'ARSSELENE ROUATBI - Organisation, vous acceptez de respecter les présentes conditions générales.</p>" +
+              "<p class=\"mb-3\">L'ARSSELENE ROUATBI - Organisation met cette plateforme à disposition à titre informatif et pour soutenir des projets académiques et des initiatives de recherche.</p>" +
               "<p class=\"mb-3\">Nous nous engageons à protéger la vie privée des utilisateurs : nous ne collectons, ne stockons ni ne traitons aucune donnée personnelle ; nous n'utilisons pas de cookies ni de technologies de suivi. Votre visite sur ce site reste entièrement anonyme.</p>" +
               "<p class=\"mb-3\">Les utilisateurs s'engagent à utiliser ce site de manière responsable et uniquement à des fins licites. Toute utilisation abusive de la plateforme ou de son contenu est strictement interdite.</p>" +
-              "<p class=\"mb-3\">L'Aslan Organisation se réserve le droit de modifier les présentes conditions à tout moment sans préavis. La poursuite de l'utilisation du site vaut acceptation des modifications.</p>" +
+              "<p class=\"mb-3\">L'ARSSELENE ROUATBI - Organisation se réserve le droit de modifier les présentes conditions à tout moment sans préavis. La poursuite de l'utilisation du site vaut acceptation des modifications.</p>" +
               "<p class=\"mb-0\">Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser ce site.</p>",
+            contactTitle: "Coordonnees & activites",
+            contactLead: "Adresse, nom, activites et numero de telephone.",
+            contactAddressLabel: "Adresse",
+            contactAddressValue: "ROUTE DE SOUSSE Kalaa Essghira Sousse 4021",
+            contactNameLabel: "Nom",
+            contactNameValue: "ARSSELENE ROUATBI",
+            contactActivitiesLabel: "Activites",
+            contactActivitiesValue: "ACTIVITES INFORMATIQUES<br />PORTAIL INTERNET",
+            contactPhoneLabel: "Telephone",
+            contactPhoneValue: "+216 24301604",
+            packsTitle: "Forfaits",
+            packsLead: "Un seul forfait disponible pour le moment.",
+            packNameLabel: "Forfait",
+            packNameValue: "Aslan calendar",
+            packPriceLabel: "Prix",
+            packPriceValue: "42 TND",
             comingTitle: "D'autres fonctionnalités arrivent bientôt…",
             comingBody:
-              "Nous préparons de nouveaux outils et des améliorations pour l'Aslan Organisation. Revenez bientôt pour des nouveautés, des options de paiement élargies et des informations complémentaires.",
-            footerLine: " Aslan Organisation. Tous droits réservés.",
+              "Nous préparons de nouveaux outils et des améliorations pour l'ARSSELENE ROUATBI - Organisation. Revenez bientôt pour des nouveautés, des options de paiement élargies et des informations complémentaires.",
+            footerLine: " ARSSELENE ROUATBI - Organisation. Tous droits réservés.",
             langGroupAria: "Langue",
           },
         };
