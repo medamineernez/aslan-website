@@ -144,6 +144,12 @@
         object-fit: contain;
       }
 
+      /* Product logo: left-align inside card (default .payment-card centers content) */
+      .payment-card.product-logo-card {
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
       .terms {
         background: #ffffff;
         border-radius: 18px;
@@ -223,6 +229,9 @@
 
   <body>
     <main class="page-shell">
+      <!-- Product (moved to top, left-aligned) -->
+    
+
       <!-- Header / Hero -->
       <header class="hero">
         <div class="hero-top-band">
@@ -248,23 +257,55 @@
         <div class="container hero-inner">
           <h1 class="hero-title">ARSSELENE ROUATBI - Organisation</h1>
           <p class="hero-subtitle mb-0" data-i18n="heroSubtitle">
-            Welcome. This page lists the payment methods we accept and our terms of use. New sections and features will
-            appear here over time.
-          </p>
-
-          <div class="logo-row" data-i18n-aria="logoRowAria" aria-label="ARSSELENE ROUATBI - Organisation logos">
-            <div class="logo-pill" role="img" data-i18n-aria="logo2Aria" aria-label="ARSSELENE ROUATBI - Organisation icon">
-              <img
-                data-i18n-alt="logo2Alt"
-                src="assets/logo.png"
-                alt="ARSSELENE ROUATBI - Organisation — crescent moon logo"
-              />
-            </div>
-          </div>
+                Welcome. This page lists the payment methods we accept and our terms of use. New sections and features will
+                appear here over time.
+              </p>
         </div>
       </header>
 
       <div class="container">
+        <!-- Product -->
+        <section class="section" aria-labelledby="product-title">
+          <div class="section-head">
+            <h2 id="product-title" class="section-title h3 mb-1">Produit</h2>
+            <p class="section-lead mb-0">© calendrier ASLAN</p>
+          </div>
+
+          <div class="row g-3 justify-content-start">
+            <div class="col-12">
+              <div class="payment-card product-logo-card">
+                <div class="logo-row justify-content-start" data-i18n-aria="logoRowAria" aria-label="ARSSELENE ROUATBI - Organisation logos">
+                  <div class="logo-pill" role="img" data-i18n-aria="logo2Aria" aria-label="ARSSELENE ROUATBI - Organisation icon">
+                    <img
+                      id="logo2"
+                      data-i18n-alt="logo2Alt"
+                      src="assets/logo.png"
+                      alt="ARSSELENE ROUATBI - Organisation — crescent moon logo"
+                      role="button"
+                      tabindex="0"
+                      style="cursor: pointer;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Free period of use -->
+        <section class="section" aria-labelledby="free-trial-title">
+          <div class="section-head">
+            <h2 id="free-trial-title" class="section-title h3 mb-1" data-i18n="freeTrialTitle">Free trial</h2>
+            <p class="section-lead mb-0" data-i18n="freeTrialLead">
+              24 hours to transform the problem the lunar calendar app solves for you.
+            </p>
+            <p class="mb-0 text-start section-lead" data-i18n="freeTrialBody">
+              Enjoy a free one-day trial before you buy. Full access, zero risk.
+            </p>
+          </div>
+         
+        </section>
+
         <!-- Payment Methods -->
         <section class="section" aria-labelledby="payment-methods-title">
           <div class="section-head">
@@ -312,8 +353,11 @@
         <!-- Terms of Use -->
         <section class="section" aria-labelledby="terms-title">
           <div class="section-head">
-            <h2 id="terms-title" class="section-title h3 mb-1" data-i18n="termsTitle">Terms of Use</h2>
-            <p class="section-lead mb-0" data-i18n="termsLead">Please read before using our services.</p>
+            <h2 id="terms-title" class="section-title h3 mb-1" data-i18n="termsTitle">Terms of Use and Contract</h2>
+            <p class="section-lead mb-2" data-i18n="termsLead">Please read before using our services.</p>
+            <p class="mb-0 small" data-i18n-html="termsDocLinksHtml">
+              <a href="contrat.html">View the contract</a>
+            </p>
           </div>
 
           <div class="terms">
@@ -367,6 +411,16 @@
                 <div class="fw-semibold" data-i18n="contactNameValue">ARSSELENE ROUATBI</div>
               </div>
 
+              <div class="col-12 col-md-6">
+                <div class="small text-uppercase" >Num RNE</div>
+                <div class="fw-semibold" >ER20260069654</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="small text-uppercase" >Numéro d'imatriculation fiscale</div>
+                <div class="fw-semibold" >1960579Q</div>
+              </div>
+
               <div class="col-12">
                 <div class="small text-uppercase" data-i18n="contactActivitiesLabel">Activities</div>
                 <div class="fw-semibold" data-i18n-html="contactActivitiesValue">
@@ -378,7 +432,7 @@
               <div class="col-12">
                 <div class="small text-uppercase" data-i18n="contactPhoneLabel">Phone number</div>
                 <div class="fw-semibold">
-                  <a href="tel:+21624301604" data-i18n="contactPhoneValue">+216 24301604</a>
+                  <a href="tel:+21624301604">+216 28401060</a>
                 </div>
               </div>
             </div>
@@ -427,8 +481,9 @@
             paymentTitle: "Payment methods",
             paymentLead: "Supported payment options for a smooth checkout experience.",
             paymentImgAlt: "Supported payment methods",
-            termsTitle: "Terms of Use",
+            termsTitle: "Terms of Use and Contract",
             termsLead: "Please read before using our services.",
+            termsDocLinksHtml: '<a href="contrat.html">View the contract</a>',
             termsHeading: "Usage guidelines",
             termsHtml:
               '<p class="mb-3">By using the ARSSELENE ROUATBI - Organisation website, you agree to comply with the following terms and conditions.</p>' +
@@ -453,6 +508,9 @@
             packNameValue: "Pack 1",
             packPriceLabel: "Price",
             packPriceValue: "42 TND",
+            freeTrialTitle: "Free trial",
+            freeTrialLead: "24 hours to transform the problem the lunar calendar app solves for you.",
+            freeTrialBody: "Enjoy a free one-day trial before you buy. Full access, zero risk.",
             comingTitle: "More features coming soon…",
             comingBody:
               "We are preparing additional tools and improvements for ARSSELENE ROUATBI - Organisation. Check back soon for new updates, enhanced payment options, and expanded information.",
@@ -473,8 +531,9 @@
             paymentTitle: "Modes de paiement",
             paymentLead: "Options de paiement prises en charge pour un paiement simple et fluide.",
             paymentImgAlt: "Moyens de paiement acceptés",
-            termsTitle: "Conditions d'utilisation",
+            termsTitle: "Conditions d'utilisation et contrat",
             termsLead: "Veuillez les lire avant d'utiliser nos services.",
+            termsDocLinksHtml: '<a href="contrat.html">Consulter le contrat</a>',
             termsHeading: "Modalités d'utilisation",
             termsHtml:
               "<p class=\"mb-3\">En utilisant le site de l'ARSSELENE ROUATBI - Organisation, vous acceptez de respecter les présentes conditions générales.</p>" +
@@ -493,12 +552,16 @@
             contactActivitiesValue: "ACTIVITES INFORMATIQUES<br />PORTAIL INTERNET",
             contactPhoneLabel: "Telephone",
             contactPhoneValue: "+216 24301604",
-            packsTitle: "Forfaits",
-            packsLead: "Un seul forfait disponible pour le moment.",
+            packsTitle: "Prix de l'application",
+            packsLead: " ",
             packNameLabel: "Forfait",
-            packNameValue: "Aslan calendar",
+            packNameValue: "© Aslan calendar",
             packPriceLabel: "Prix",
-            packPriceValue: "42 TND",
+            packPriceValue: "42 TND /12.5 Euro /14.5 USD",
+            freeTrialTitle: "Période d'essai gratuite",
+            freeTrialLead: "24h pour transformer votre problème que l'app calendrier lunaire résout.",
+            freeTrialBody:
+              "Bénéficiez d'une période d'essai gratuite d'un jour avant l'achat. Accès total, zéro risque.",
             comingTitle: "D'autres fonctionnalités arrivent bientôt…",
             comingBody:
               "Nous préparons de nouveaux outils et des améliorations pour l'ARSSELENE ROUATBI - Organisation. Revenez bientôt pour des nouveautés, des options de paiement élargies et des informations complémentaires.",
@@ -583,6 +646,114 @@
         applyLang(initialLang());
       })();
     </script>
+
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modal: Calendrier Lunaire ASLAN 360 -->
+    <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="calendarModalLabel">🌙 Calendrier Lunaire ASLAN 360 ©</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Un calendrier unique au monde, inspiré du Coran et mentionné dans tous les Livres de Dieu, y compris la Bible et la Torah. Basé sur un cycle lunaire de 360 jours, il allie précision, spiritualité et découverte, offrant une nouvelle manière de vivre le temps en harmonie avec la Révélation.</p>
+            <h6>✨ Points forts :</h6>
+            <ul>
+              <li>🌗 Journée &amp; Nuit : une répartition claire qui reflète la dualité de la création.</li>
+              <li>📅 Mois &amp; Saisons sacrés : intégration des 4 mois sacrés et des saisons d’été/hiver.</li>
+              <li>🕌 Prières coraniques : les horaires justes de prière, inspirés du Coran et rappelés dans tous les Livres de Dieu, sont intégrés au calendrier.</li>
+              <li>🌟 Temps forts islamiques : repérage juste et facile du mois de Ramadan, ainsi que des périodes consacrées à la ʿUmrah et au Ḥajj.</li>
+              <li>📖 Authenticité &amp; Protection : recherches approfondies et dépôt légal officiel OTDAV Tunisie — N° 138-01-21-03-2025 (ASLAN Lunar Calendar 360).</li>
+            </ul>
+            <p>🌙 Plus qu’un calendrier — C’est un compagnon spirituel, pour rester connecté aux cycles du temps et aux enseignements divins.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var trigger = document.getElementById('logo2');
+        var modalEl = document.getElementById('calendarModal');
+
+        function showCustomModal() {
+          if (!modalEl) return;
+          // use Bootstrap if available
+          if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+            var bmodal = new bootstrap.Modal(modalEl);
+            bmodal.show();
+            return;
+          }
+
+          // Otherwise, show modal by toggling classes and adding a backdrop
+          modalEl.classList.add('show');
+          modalEl.style.display = 'block';
+          modalEl.setAttribute('aria-modal', 'true');
+          modalEl.removeAttribute('aria-hidden');
+          // add backdrop
+          if (!document.getElementById('calendarModalBackdrop')) {
+            var backdrop = document.createElement('div');
+            backdrop.className = 'modal-backdrop fade show';
+            backdrop.id = 'calendarModalBackdrop';
+            document.body.appendChild(backdrop);
+            backdrop.addEventListener('click', hideCustomModal);
+          }
+          document.body.classList.add('modal-open');
+        }
+
+        function hideCustomModal() {
+          if (!modalEl) return;
+          // Bootstrap handles its own hiding; if not present, remove our classes
+          if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+            // find any visible bootstrap modal instance and hide
+            try {
+              var inst = bootstrap.Modal.getInstance(modalEl);
+              if (inst) inst.hide();
+            } catch (e) {}
+            return;
+          }
+
+          modalEl.classList.remove('show');
+          modalEl.style.display = 'none';
+          modalEl.setAttribute('aria-hidden', 'true');
+          var backdrop = document.getElementById('calendarModalBackdrop');
+          if (backdrop) backdrop.remove();
+          document.body.classList.remove('modal-open');
+        }
+
+        function attach() {
+          if (!trigger) return;
+          trigger.addEventListener('click', function (e) {
+            e.preventDefault();
+            showCustomModal();
+          });
+          trigger.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              showCustomModal();
+            }
+          });
+
+          // wire up any close buttons inside the modal for the custom fallback
+          modalEl && modalEl.querySelectorAll('[data-bs-dismiss="modal"]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              hideCustomModal();
+            });
+          });
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', attach);
+        } else {
+          attach();
+        }
+      })();
+    </script>
   </body>
 </html>
-
