@@ -157,6 +157,28 @@
         border: 1px solid rgba(17, 26, 46, 0.06);
       }
 
+      .contrat-body h2 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-top: 1.75rem;
+        margin-bottom: 0.65rem;
+      }
+      .contrat-body h2:first-child {
+        margin-top: 0;
+      }
+      .contrat-body h3 {
+        font-size: 1rem;
+        font-weight: 650;
+        margin-top: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+      .contrat-body p {
+        margin-bottom: 0.75rem;
+      }
+      .contrat-body ul {
+        margin-bottom: 0.75rem;
+      }
+
       .packs-block {
         background: var(--brand-900);
         border: 1px solid rgba(232, 240, 255, 0.18);
@@ -321,7 +343,7 @@
                 <img
                   class="img-fluid"
                   data-i18n-alt="paymentImgAlt"
-                  src="assets/payement/payements.png"
+                  src="assets/payement/payements.jpg"
                   alt="Supported payment methods"
                 />
               </div>
@@ -356,7 +378,7 @@
             <h2 id="terms-title" class="section-title h3 mb-1" data-i18n="termsTitle">Terms of Use and Contract</h2>
             <p class="section-lead mb-2" data-i18n="termsLead">Please read before using our services.</p>
             <p class="mb-0 small" data-i18n-html="termsDocLinksHtml">
-              <a href="contrat.html">View the contract</a>
+              <a href="#contrat">View the contract</a>
             </p>
           </div>
 
@@ -387,6 +409,75 @@
                   </p>
                   <p class="mb-0">If you do not agree with these terms, please refrain from using this website.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- App contract (Calendrier Lunaire) — full text -->
+        <section id="contrat" class="section" aria-labelledby="contract-app-title">
+          <div class="section-head">
+            <h2 id="contract-app-title" class="section-title h3 mb-1" data-i18n="contractAppTitle">Conditions d'utilisation – Calendrier Lunaire</h2>
+            <p class="text-secondary small mb-0" data-i18n="contractAppSub">ARSSELENE ROUATBI - Organisation</p>
+            <p class="text-secondary small mt-1 mb-0" data-i18n="contractAppUpdated">Dernière mise à jour : 7 avril 2026</p>
+          </div>
+          <div class="terms">
+            <div class="card-modern p-3 p-md-4">
+              <div class="contrat-body text-start">
+                <h2>1. Acceptation des conditions</h2>
+                <p>
+                  En téléchargeant, accédant ou utilisant l'application « Calendrier aslan 360 » (ci-après « l’Application »), vous
+                  acceptez d’être lié par les présentes conditions d’utilisation. Si vous n’acceptez pas ces conditions, veuillez
+                  ne pas utiliser l'Application.
+                </p>
+                <h2>2. Abonnements et achats intégrés</h2>
+                <h3>2.1 Options payantes</h3>
+                <p>L’Application propose des fonctionnalités premium  L’accès à ces fonctionnalités peut être obtenu via :</p>
+                <ul>
+                  <li>Un abonnement mensuel ou annuel ;</li>
+                  <li>Un essaie gratuit de 24 heures</li>
+                </ul>
+                <h3>2.2 Moyen de paiement – Click to Pay</h3>
+                <p>
+                  Tous les paiements au sein de l’Application sont sécurisés. Nous acceptons le paiement par Click to Pay, qui
+                  permet de régler vos achats en quelques clics sans ressaisir vos coordonnées bancaires. En cliquant sur « Payer
+                  » ou « Acheter », vous autorisez le débit du montant indiqué via le mode de paiement que vous avez sélectionné.
+                </p>
+                <h3>2.3 Facturation</h3>
+                <p>
+                  Les paiements sont prélevés immédiatement après confirmation de l’achat. Pour les abonnements, le renouvellement
+                  est automatique sauf désactivation au moins 24 heures avant la fin de la période en cours. Vous pouvez gérer
+                  vos abonnements depuis les réglages de votre compte (App Store / Google Play) ou directement dans l’Application.
+                </p>
+                <h2>3. Annulation et remboursement</h2>
+                <p>
+                  Conformément à la législation en vigueur, vous disposez d’un délai de rétractation de 14 jours pour les
+                  achats à distance, sauf exceptions (notamment pour les contenus numériques délivrés immédiatement avec votre
+                  accord). Les achats intégrés dans l’Application sont généralement définitifs. Pour toute réclamation, veuillez
+                  contacter notre support à l’adresse :
+                  <a href="mailto:support@calendrierlunaire.app">support@arselene-rouatbi.com</a>
+                </p>
+                <h2>4. Utilisation licite</h2>
+                <p>
+                  Vous vous engagez à ne pas utiliser l’Application à des fins illégales, frauduleuses ou non autorisées. Toute
+                  tentative de copie, de modification ou de redistribution non autorisée du contenu est interdite.
+                </p>
+                <h2>5. Limitation de responsabilité</h2>
+                <p>
+                  Les informations fournies par l’Application sont données à titre indicatif. Nous ne garantissons pas
+                  l’exactitude absolue des phases lunaires ou des dates. En aucun cas, l’éditeur ne pourra être tenu responsable
+                  des pertes ou dommages directs ou indirects liés à l’utilisation de l’Application.
+                </p>
+                <h2>6. Modification des conditions</h2>
+                <p>
+                  Nous nous réservons le droit de modifier ces conditions à tout moment. Les modifications entrent en vigueur
+                  dès leur publication dans l’Application. Votre utilisation continue vaut acceptation.
+                </p>
+                <h2>7. Droit applicable</h2>
+                <p class="mb-0">
+                  Les présentes conditions sont régies par le droit français. Tout litige sera soumis à la compétence exclusive
+                  des tribunaux français.
+                </p>
               </div>
             </div>
           </div>
@@ -483,7 +574,10 @@
             paymentImgAlt: "Supported payment methods",
             termsTitle: "Terms of Use and Contract",
             termsLead: "Please read before using our services.",
-            termsDocLinksHtml: '<a href="contrat.html">View the contract</a>',
+            termsDocLinksHtml: '<a href="#contrat">View the contract</a>',
+            contractAppTitle: "Terms of use – Calendrier Lunaire",
+            contractAppSub: "ARSSELENE ROUATBI - Organisation",
+            contractAppUpdated: "Last updated: 7 April 2026",
             termsHeading: "Usage guidelines",
             termsHtml:
               '<p class="mb-3">By using the ARSSELENE ROUATBI - Organisation website, you agree to comply with the following terms and conditions.</p>' +
@@ -533,7 +627,10 @@
             paymentImgAlt: "Moyens de paiement acceptés",
             termsTitle: "Conditions d'utilisation et contrat",
             termsLead: "Veuillez les lire avant d'utiliser nos services.",
-            termsDocLinksHtml: '<a href="contrat.html">Consulter le contrat</a>',
+            termsDocLinksHtml: '<a href="#contrat">Consulter le contrat</a>',
+            contractAppTitle: "Conditions d'utilisation – Calendrier Lunaire",
+            contractAppSub: "ARSSELENE ROUATBI - Organisation",
+            contractAppUpdated: "Dernière mise à jour : 7 avril 2026",
             termsHeading: "Modalités d'utilisation",
             termsHtml:
               "<p class=\"mb-3\">En utilisant le site de l'ARSSELENE ROUATBI - Organisation, vous acceptez de respecter les présentes conditions générales.</p>" +
