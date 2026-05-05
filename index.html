@@ -297,16 +297,16 @@
             <div class="col-12">
               <div class="payment-card product-logo-card">
                 <div class="logo-row justify-content-start" data-i18n-aria="logoRowAria" aria-label="ARSSELENE ROUATBI - Organisation logos">
-                  <div class="logo-pill" role="img" data-i18n-aria="logo2Aria" aria-label="ARSSELENE ROUATBI - Organisation icon">
-                    <img
-                      id="logo2"
-                      data-i18n-alt="logo2Alt"
-                      src="assets/logo.png"
-                      alt="ARSSELENE ROUATBI - Organisation — crescent moon logo"
-                      role="button"
-                      tabindex="0"
-                      style="cursor: pointer;"
-                    />
+                  <div class="logo-pill" role="img" data-i18n-aria="logo2Aria" >
+                    <a href="https://app.arselen-rouatbi.tn/" rel="noopener noreferrer">
+                      <img
+                        id="logo2"
+                        data-i18n-alt="logo2Alt"
+                        src="assets/logo.png"
+                        alt="ARSSELENE ROUATBI - Organisation — crescent moon logo"
+                        style="cursor: pointer;"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -778,72 +778,6 @@
       (function () {
         var trigger = document.getElementById('logo2');
         var modalEl = document.getElementById('calendarModal');
-
-        function showCustomModal() {
-          if (!modalEl) return;
-          // use Bootstrap if available
-          if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
-            var bmodal = new bootstrap.Modal(modalEl);
-            bmodal.show();
-            return;
-          }
-
-          // Otherwise, show modal by toggling classes and adding a backdrop
-          modalEl.classList.add('show');
-          modalEl.style.display = 'block';
-          modalEl.setAttribute('aria-modal', 'true');
-          modalEl.removeAttribute('aria-hidden');
-          // add backdrop
-          if (!document.getElementById('calendarModalBackdrop')) {
-            var backdrop = document.createElement('div');
-            backdrop.className = 'modal-backdrop fade show';
-            backdrop.id = 'calendarModalBackdrop';
-            document.body.appendChild(backdrop);
-            backdrop.addEventListener('click', hideCustomModal);
-          }
-          document.body.classList.add('modal-open');
-        }
-
-        function hideCustomModal() {
-          if (!modalEl) return;
-          // Bootstrap handles its own hiding; if not present, remove our classes
-          if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
-            // find any visible bootstrap modal instance and hide
-            try {
-              var inst = bootstrap.Modal.getInstance(modalEl);
-              if (inst) inst.hide();
-            } catch (e) {}
-            return;
-          }
-
-          modalEl.classList.remove('show');
-          modalEl.style.display = 'none';
-          modalEl.setAttribute('aria-hidden', 'true');
-          var backdrop = document.getElementById('calendarModalBackdrop');
-          if (backdrop) backdrop.remove();
-          document.body.classList.remove('modal-open');
-        }
-
-        function attach() {
-          if (!trigger) return;
-          trigger.addEventListener('click', function (e) {
-            e.preventDefault();
-            showCustomModal();
-          });
-          trigger.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-              e.preventDefault();
-              showCustomModal();
-            }
-          });
-
-          // wire up any close buttons inside the modal for the custom fallback
-          modalEl && modalEl.querySelectorAll('[data-bs-dismiss="modal"]').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-              hideCustomModal();
-            });
-          });
-        }
 
         if (document.readyState === 'loading') {
           document.addEventListener('DOMContentLoaded', attach);
